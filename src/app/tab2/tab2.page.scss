@@ -1,0 +1,18 @@
+.eco-content {
+    --background: #ffffff; /* White background */
+    padding: 16px;
+  }
+  
+  ion-toolbar {
+    --background: #4caf50; /* Green background */
+    --color: #ffffff; /* White text */
+  }
+  
+  .expandable-content {
+    padding: 16px;
+    background-color: #f0fff0; /* Light green background */
+    border-radius: 8px;
+    margin: 0 16px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

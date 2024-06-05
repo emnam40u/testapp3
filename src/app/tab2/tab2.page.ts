@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  item: string = '';
+  description: string = 'aaaaaaa';
+  title: string = 'aa';
+  expanded: boolean = false;
+  items = [
+    { title: 'Item 1', description: 'Description for Item 1', expanded: false },
+    { title: 'Item 2', description: 'Description for Item 2', expanded: false },
+    { title: 'Item 3', description: 'Description for Item 3', expanded: false }
+  ];
 
-  constructor() {}
-
+  toggleItem(item: { title: string; description: string; expanded: boolean }) {
+    item.expanded = !item.expanded;
+  }
 }

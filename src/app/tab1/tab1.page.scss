@@ -1,0 +1,36 @@
+.eco-content {
+  --background: #ffffff; /* White background */
+  padding: 16px;
+}
+
+ion-toolbar {
+  --background: #4caf50; /* Green background */
+  --color: #ffffff; /* White text */
+}
+
+ion-label {
+  color: #4caf50; /* Green text */
+}
+
+ion-input {
+  --background: #f0fff0; /* Light green background */
+  --border-radius: 8px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ion-item {
+  --background: none;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-button {
+  --background: #4caf50; /* Green background */
+  --border-radius: 8px;
+  --color: #ffffff; /* White text */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
+}

@@ -6,12 +6,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="eco-content">
+  <form>
+    <ion-list>
+      <ion-item class="custom-item">
+        <ion-label position="stacked">Prenom</ion-label>
+        <ion-input type="text" [(ngModel)]="name" name="name" id="name" required></ion-input>
+      </ion-item>
+      <ion-item class="custom-item">
+        <ion-label position="stacked">Nom</ion-label>
+        <ion-input type="text" [(ngModel)]="nom" name="nom" id="nom" required></ion-input>
+      </ion-item>
+      <ion-item class="custom-item">
+        <ion-label position="stacked">Adresse</ion-label>
+        <ion-input type="text" [(ngModel)]="adr" name="adr" id="adr" required></ion-input>
+      </ion-item>
+      <ion-item class="custom-item">
+        <ion-label position="stacked">Téléphone</ion-label>
+        <ion-input type="text" [(ngModel)]="tel" name="tel" id="tel" maxlength="8" required></ion-input>
+      </ion-item>
+    </ion-list>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-button type="submit" expand="block" [routerLink]="['list']">Ajouter</ion-button>
+  </form>
 </ion-content>
